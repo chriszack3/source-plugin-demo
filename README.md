@@ -1,11 +1,5 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  Source Plugin Walkthrough
 </h1>
 
 Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
@@ -39,6 +33,46 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries)._
 
     Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+
+1. **Pick an api to use**
+    Copy copy copy copy
+
+1. **Test call to api from browser to confirm response**
+
+1. **Make plugins directory in the root of your project**
+
+1. **Mkdir plugins**
+
+1. **Mkdir source-plugin**
+
+1. **Cd plugins/source-plugin**
+
+1. **Clone barebones gatsby source plugin**
+
+1. **Install axios, gatsby source filesystem, graphql**
+
+1. **Add source plugin to gatsby config.js**
+
+1. **Export the sourceNodes api from gatsby-node.js at plugins/source-plugin/gatsby-node.js**
+
+1. **Send a request to your api and log the response to the console**
+
+1. **Run gatsby develop and you should see your response in the console like below**
+
+1. **Loop over the array returned from the api and call createNode for each item in the array**
+
+1. **Refactor into a try/catch pattern**
+
+1. **Check if data.result is an array**
+
+1. **If no throw err**
+
+1. **If yes createNode for each item**
+
+1. **Check in graphql playground that nodes were created successfully**
+
+1. **Refactor with api key stored in .env file and import it with dotenv library already included**
+
 
 ## 🚀 Quick start (Gatsby Cloud)
 
