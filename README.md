@@ -1,21 +1,30 @@
 <h1 align="center">
-  Source Plugin Walkthrough
+  Portfolio: Source Plugin Walkthrough
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
-
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+This is intended to be a demonstration of how I might write operating procedures for a junior dev on my team. It assumes a basic understanding of Node, React, and popular JS libraries (e.g. Axios).
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Install the Gatsby client if you haven't already**
+    First check your version of Gatsby:
+    ```shell
+    gatsby -v
+    ```
+    If you have the Gatsby client installed already you will get the following output in the console.
+    ```shell
+    #With the X's being your version number
+    Gatsby CLI version: X.X.X
+    ```
+    If you get this response, nothing more is needed, proceed to the next step. 
 
-    Use the Gatsby CLI ([install instructions](https://www.gatsbyjs.com/docs/tutorial/part-0/#gatsby-cli)) to create a new site, specifying the hello-world starter.
+    But if you get the output: 
 
     ```shell
     # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+    gatsby: command not found
     ```
+    Go to <a href='https://www.gatsbyjs.com/docs/reference/gatsby-cli/'>this link</a> and follow the instructions to download the Gatsby client, then start this step over from the beginning.  
 
 1.  **Start developing.**
 
@@ -33,6 +42,14 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby Tutorial](https://www.gatsbyjs.com/docs/tutorial/part-4/#use-graphiql-to-explore-the-data-layer-and-write-graphql-queries)._
 
     Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+
+
+
+1. **Open the file index.js in src/pages**
+    Gatsby will call its createPage API on each .js file in the pages folder of root using the filename as the route (except in the case of 'index' which is routed to '/').
+
+1. **Run your Gatsby app to test that it builds successfully**
+    The Gatsby develop command will start a hot-reload server at localhost:8000
 
 1. **Pick an api to use**
     Copy copy copy copy
