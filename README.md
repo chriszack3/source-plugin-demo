@@ -26,7 +26,13 @@ This is intended to be a demonstration of how I might write operating procedures
     ```
     Go to <a href='https://www.gatsbyjs.com/docs/reference/gatsby-cli/'>this link</a> and follow the instructions to download the Gatsby client, then start this step over from the beginning.  
 
-1.  **Start developing.**
+1. **Create a barebones Gatsby app**
+    For our purposes let's just use the gatsby-hello-world-starter.
+    ```shell
+    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+    ```
+
+1.  **Test that your app builds correctly.**
 
     Navigate into your new site’s directory and start it up.
 
@@ -36,6 +42,7 @@ This is intended to be a demonstration of how I might write operating procedures
     ```
 
 1.  **Open the source code and start editing!**
+    You should see the following output in your console after the development bundle builds: 
 
     Your site is now running at `http://localhost:8000`!
 
@@ -43,13 +50,19 @@ This is intended to be a demonstration of how I might write operating procedures
 
     Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
+    If your build process errors, try to troubleshoot using this <a href='https://www.gatsbyjs.com/docs/how-to/local-development/troubleshooting-common-errors/'>link</a>
 
+    For WSL 1/2 users: 
+    If you get an EPERM error, it means that the group and/or owner permissions were set too strictly when the 'gatsby new' command was run. To fix run the following:
+    
+    ```shell
+    cd ..
+    sudo chown <your_username>: -R /gatsby-starter-hello-world
+    ``` 
 
 1. **Open the file index.js in src/pages**
     Gatsby will call its createPage API on each .js file in the pages folder of root using the filename as the route (except in the case of 'index' which is routed to '/').
-
-1. **Run your Gatsby app to test that it builds successfully**
-    The Gatsby develop command will start a hot-reload server at localhost:8000
+    Changes made to src/pages/index.js will hot-reload at localhost:8000
 
 1. **Pick an api to use**
     Copy copy copy copy
@@ -89,13 +102,6 @@ This is intended to be a demonstration of how I might write operating procedures
 1. **Check in graphql playground that nodes were created successfully**
 
 1. **Refactor with api key stored in .env file and import it with dotenv library already included**
-
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-hello-world)
 
 ## 🧐 What's inside?
 
